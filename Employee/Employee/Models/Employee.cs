@@ -25,5 +25,11 @@ namespace Employee.Models
 
         public string Recomendation { get; set; }
 
+        public class Models
+        {
+            public class Employee
+            {
+            }
+        }
     }
 }
