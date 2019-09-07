@@ -12,6 +12,6 @@ namespace Employee.Models
 
         }
 
-        public System.Data.Entity.DbSet<Employee.Models.Employee> Employees { get; set; }
+        public System.Data.Entity.DbSet<Employee.Models.Employ> Employs { get; set; }
     }
 }

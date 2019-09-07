@@ -1,35 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
-
-namespace Employee.Models
+﻿namespace Employee.Models
 {
+    using System.ComponentModel.DataAnnotations;
 
-
-    public class Employee
+    public class Employ
     {
-        [key]
+        [Key]
+
         public int EmployeeID { get; set; }
         [Required]
 
         public string Name { get; set; }
         [Required]
-
+        [Range(1, 100000)]
         public int Salary { get; set; }
         [Required]
-
+       
         public string Birthday { get; set; }
         [Required]
 
         public string Recomendation { get; set; }
 
-        public class Models
-        {
-            public class Employee
-            {
-            }
-        }
     }
 }
